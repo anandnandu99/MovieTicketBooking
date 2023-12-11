@@ -1,0 +1,22 @@
+/* home-dashboard.component.css */
+.background-container {
+    position: relative;
+    background: url('../../../assets/background.jpg') center/cover no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+.outlined-heading {
+    color: rgb(141, 7, 7); /* Your desired text color */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); /* Adjust the values as needed */
+  }

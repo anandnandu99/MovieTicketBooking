@@ -1,0 +1,58 @@
+
+
+/* styles.css */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+
+body {
+	font-family: "Montserrat", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  background-color: #242333;
+  color: #fff;
+  margin: 0;
+}
+
+
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.selected {
+  background-color: #0081cb;
+}
+.seat.booked {
+  background-color: red;
+  cursor: not-allowed; 
+}
+
+
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: not-allowed;
+  transform: scale(1);
+}
+
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
