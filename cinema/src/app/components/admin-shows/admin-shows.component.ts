@@ -23,6 +23,8 @@ export class AdminShowsComponent implements OnInit {
     theatreName: '',
     movieName: ''
   };
+  minDateTime: string;
+
   theatres: any[] = [];
   movies: any[] = [];
 
@@ -34,7 +36,11 @@ export class AdminShowsComponent implements OnInit {
     private showService: ShowService,
     private theatreService: TheatreService,
     private bookingService: BookingService
-  ) { }
+  ) { 
+    const currentDateTime = new Date();
+    currentDateTime.setMinutes(currentDateTime.getMinutes() + 1); // Add 1 minute to ensure future dates are allowed
+    this.minDateTime = currentDateTime.toISOString().slice(0, 16);
+  }
 
   ngOnInit() {
     this.getAllShows();

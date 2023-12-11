@@ -18,6 +18,7 @@ import { UserTheatresComponent } from './components/user-theatres/user-theatres.
 import { UserBookingsComponent } from './components/user-bookings/user-bookings.component';
 import { SeatBookComponent } from './components/seat-book/seat-book.component';
 import { HeaderComponent } from './components/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HeaderComponent } from './components/header/header.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
